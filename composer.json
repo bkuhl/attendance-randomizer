@@ -1,0 +1,17 @@
+{
+    "name": "bkuhl/attendance-randomizer",
+    "type": "project",
+    "require": {
+        "bugsnag/bugsnag": "^3.5",
+        "phpmailer/phpmailer": "v6.0.0rc5",
+        "nesbot/carbon": "^1.22",
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben Kuhl",
+            "email": "benkuhl@gmail.com"
+        }
+    ]
+}
