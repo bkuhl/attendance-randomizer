@@ -2,7 +2,7 @@ FROM php:7.1-alpine
 
 WORKDIR /var/www/html
 
-COPY install_composer.php /var/www/html/install_composer.php
+COPY infrastructure/install_composer.php install_composer.php
 
 RUN apk add --update --no-cache \
 
@@ -13,6 +13,7 @@ RUN apk add --update --no-cache \
 
     # Installing composer
     && php /var/www/html/install_composer.php \
+    && rm /var/www/html/install_composer.php \
 
     && mkdir -p /home/www-data/.composer/cache \
 
