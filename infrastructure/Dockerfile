@@ -1,3 +1,5 @@
+FROM php:7.1-alpine
+
 WORKDIR /var/www/html
 
 COPY install_composer.php /var/www/html/install_composer.php
