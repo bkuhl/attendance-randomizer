@@ -21,4 +21,4 @@ RUN apk add --update --no-cache \
 
 COPY submit-attendance.php .
 
-CMD 'crond', '-f', '-d', '8'
+CMD 'crond -f -d 8'
