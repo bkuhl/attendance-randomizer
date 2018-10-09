@@ -53,7 +53,7 @@ if (in_array($today->format('n'), $monthsOfAttendance) && $today->format('N') ==
     $mail->addAddress(getenv('TO'));                                // Set email format to HTML
 
     $mail->Subject = getenv('SUBJECT_PREFIX').' - '.$practiceDate->format('M jS');
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->Body    = "Attendance last night was ".$attendance.".";
     $mail->AltBody = "Attendance last night was ".$attendance.".";
 
     $mail->send();
